@@ -119,6 +119,9 @@ const assetTemplate = Handlebars.compile(`
   <div id="{{ this }}"></div>
 `);
 
+const scrollTop = document.getElementById('scroll-top');
+scrollTop.onclick = () => { window.scrollTo(0, 0) };
+
 window.addEventListener('load', async () => {
   const navigation = document.getElementById('navigation');
   const networksContainer = document.getElementById('networks-container');
